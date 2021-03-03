@@ -1,0 +1,6 @@
+/dist
+/node_modules
+/vendor
+/composer.json
+/composer.lock
+/.idea

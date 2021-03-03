@@ -1,0 +1,34 @@
+
+/* npm fonts
+-------------------------------------------------- */
+
+@import "~font-awesome/scss/font-awesome";
+
+
+/* custom fonts
+-------------------------------------------------- */
+
+$SolPro: (
+    ("SolPro-Light", 'normal', 'lighter'),
+    ("SolPro-Regular", 'normal', 'normal'),
+    ("SolPro-Bold", 'normal', 'bold'),
+    ("SolPro-Black", 'normal', 'bolder')
+);
+
+@each $s in $SolPro {
+  @font-face {
+    font-family: 'Sol Pro';
+    src: url('../fonts/#{nth($s,1)}.ttf') format('ttf');
+    font-style: #{nth($s,2)};
+    font-weight: #{nth($s,3)};
+  }
+}
+
+
+/* custom css
+-------------------------------------------------- */
+
+H1 {
+  font-family: "Sol Pro";
+  font-weight: lighter;
+}

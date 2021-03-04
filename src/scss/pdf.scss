@@ -9,16 +9,16 @@
 -------------------------------------------------- */
 
 $SolPro: (
-    ("SolPro-Light", 'normal', 'lighter'),
+    ("SolPro-Light", 'normal', '200'),
     ("SolPro-Regular", 'normal', 'normal'),
     ("SolPro-Bold", 'normal', 'bold'),
-    ("SolPro-Black", 'normal', 'bolder')
+    ("SolPro-Black", 'normal', '900')
 );
 
 @each $s in $SolPro {
   @font-face {
-    font-family: 'Sol Pro';
-    src: url('../fonts/#{nth($s,1)}.ttf') format('ttf');
+    font-family: 'solpro';
+    src: url('../fonts/#{nth($s,1)}.ttf') format('truetype');
     font-style: #{nth($s,2)};
     font-weight: #{nth($s,3)};
   }
@@ -29,6 +29,7 @@ $SolPro: (
 -------------------------------------------------- */
 
 H1 {
-  font-family: "Sol Pro";
-  font-weight: lighter;
+  font-family: "solpro";
+  font-weight: normal;
 }
+
